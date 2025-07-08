@@ -1,0 +1,45 @@
+<div class="card">
+    <p-toolbar styleClass="shadow-4" [style]="{
+      'background': 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+      'font-family': '\'Inter\', -apple-system, BlinkMacSystemFont, sans-serif',
+      'padding': '0 2rem'
+    }">
+        <ng-template pTemplate="start">
+            <div class="flex align-items-center justify-content-start gap-3" style="height:200%; padding-left: 1rem;">
+                <img src="../../../assets/imgs/logo.png" alt="logo"
+                    style="width: 100px; height: auto; background-color: aliceblue;" />
+                <h2 style="color: white; font-weight: 600; margin: 0;">
+                    Ferreteria el <span style="color: #00ff0d; font-weight: 700;">Cesar</span>
+                </h2>
+            </div>
+        </ng-template>
+
+
+        <ng-template pTemplate="center">
+            <div class="flex ">
+                <button pButton label="Inicio" class="p-button-sm font-medium"
+                    style="background: transparent; color: white; border: none;" routerLink="/"></button>
+                <button pButton label="Productos" class="p-button-sm font-medium"
+                    style="background: transparent; color: white; border: none;" routerLink="/productos"></button>
+                <button pButton label="Contacto" class="p-button-sm font-medium"
+                    style="background: transparent; color: white; border: none;"></button>
+                <button pButton label="Blog" class="p-button-sm font-medium"
+                    style="background: transparent; color: white; border: none;"></button>
+            </div>
+        </ng-template>
+
+        <!-- Usuario a la derecha -->
+        <ng-template pTemplate="end">
+            <div class="flex align-items-center ">
+                <button pButton icon="pi pi-search" class="p-button-rounded p-button-text p-button-plain"
+                    style="color: white;"></button>
+                <button pButton icon="pi pi-user" class="p-button-rounded p-button-text p-button-plain"
+                    style="color: white;"></button>
+                <button pButton icon="pi pi-shopping-cart" class=" p-button-text p-button-plain"
+                    style="color: white; position: relative;">
+                    <span class="cart-badge">3</span>
+                </button>
+            </div>
+        </ng-template>
+    </p-toolbar>
+</div>

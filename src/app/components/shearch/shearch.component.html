@@ -1,0 +1,51 @@
+<div class="hero-wrapper">
+  <!-- Buscador moderno -->
+<div class="hero-search">
+  <p-inputGroup class="custom-inputgroup">
+  <input
+    type="text"
+    pInputText
+    placeholder="Buscar productos, categorías, marcas..."
+    class="custom-input"
+    [(ngModel)]="terminoBusqueda"
+    (input)="buscarProductos()"
+  />
+  <button type="button" pButton icon="pi pi-search" class="p-button-primary custom-button"></button>
+
+
+</p-inputGroup>
+
+  
+</div>
+
+<div class="hero-categories">
+  <div class="category-card" (click)="seleccionarCategoria(1)">
+    <button pButton class="p-button-rounded p-button-lg p-button-primary shadow-3" icon="pi pi-wrench"></button>
+    <span class="category-title">Manuales</span>
+  </div>
+  <div class="category-card" (click)="seleccionarCategoria(2)">
+    <button pButton class="p-button-rounded p-button-lg p-button-success shadow-3" icon="pi pi-bolt"></button>
+    <span class="category-title">Eléctricas</span>
+  </div>
+  <div class="category-card" (click)="seleccionarCategoria(3)">
+    <button pButton class="p-button-rounded p-button-lg p-button-warning shadow-3" icon="pi pi-building"></button>
+    <span class="category-title">Construcción</span>
+  </div>
+  <div class="category-card" (click)="seleccionarCategoria(4)">
+    <button pButton class="p-button-rounded p-button-lg p-button-danger shadow-3" icon="pi pi-sliders-h"></button>
+    <span class="category-title">Plomería</span>
+  </div>
+  <div class="category-card" (click)="seleccionarCategoria(5)">
+    <button pButton class="p-button-rounded p-button-lg p-button-success shadow-3" icon="pi pi-cloud
+"></button>
+    <span class="category-title">Jardinería</span>
+  </div>
+  <div class="category-card" (click)="seleccionarTodas()">
+  <button pButton class="p-button-rounded p-button-lg p-button-secondary shadow-3" icon="pi pi-filter-slash"></button>
+  <span class="category-title">Todas</span>
+</div>
+
+</div>
+
+
+</div>

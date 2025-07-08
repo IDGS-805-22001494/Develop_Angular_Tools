@@ -1,0 +1,33 @@
+.footer-container {
+  background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #687588;
+}
+
+.footer-item i {
+  color: #3b82f6;
+}

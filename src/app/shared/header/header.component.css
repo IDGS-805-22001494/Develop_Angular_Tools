@@ -1,0 +1,19 @@
+    .p-button:enabled:hover {
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .cart-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: #00d4ff;
+        color: #16213e;
+        border-radius: 0px 0px 0px 0px;
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
